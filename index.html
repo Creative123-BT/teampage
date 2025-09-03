@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Team Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #fcfbff;
+      font-family: Arial, sans-serif;
+    }
+    .banner {
+      background: linear-gradient(90deg, #5a67d8 60%, #fcfbff 100%);
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+ <div class="banner">
+    <h1>Directors</h1>
+    <p>Billiontags Creations</p>
+  </div>
+
+<section class="creative-team">
+  <div class="team-row">
+    <!-- Left intro column -->
+    <div class="team-left">
+      <h1 class="team-title">Meet the<br>Directors</h1>
+      <p class="team-desc">
+        With our new features, Cesis Studio,<br>
+        you can now import templates directly<br>
+        in the page from the frontend or<br>
+        backend page builder. With our new features, Cesis Studio,<br>
+        you can now import templates directly<br>
+        in the page from the frontend or<br>
+        backend page builder.
+      </p>
+      <!-- <div class="team-contact">
+        <span>Contact us</span>
+        <hr class="contact-sep">
+        <div class="social-links">
+          <span>Fb</span>
+          <span>Tw</span>
+          <span>Ig</span>
+        </div>
+      </div> -->
+    </div>
+    <!-- Right profile cards column -->
+    <div class="team-right">
+      <div class="profile-card">
+        <img src="https://cdn.shopify.com/s/files/1/0623/2820/9479/files/gempages_579594630555763297-568320cd-28b7-4d21-9cf7-23094a39fa19.png?v=1755069542" alt="Michael Cannon">
+        <div class="profile-text">
+          <h4>Michael Cannon</h4>
+          <p>Art Director</p>
+        </div>
+      </div>
+      <div class="profile-card">
+        <img src="https://cdn.shopify.com/s/files/1/0623/2820/9479/files/gempages_579594630555763297-568320cd-28b7-4d21-9cf7-23094a39fa19.png?v=1755069542" alt="Sylvia Morales">
+        <div class="profile-text">
+          <h4>Sylvia Morales</h4>
+          <p>UI Designer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+.creative-team {
+  background: #fcfbff;
+  padding: 50px 0 40px 0;
+}
+.team-row {
+  display: flex;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 36px;
+  flex-wrap: wrap;
+}
+.team-left {
+  flex: 1 1 320px;
+  min-width: 260px;
+  padding: 0 24px 0 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.team-title {
+  font-size: 2.6rem;
+  line-height: 1.1;
+  font-family: serif;
+  margin: 0 0 28px 0;
+  color: #22223b;
+}
+.team-desc {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 24px;
+}
+.team-contact {
+  margin-top: 30px;
+  font-size: 1rem;
+}
+.contact-sep {
+  border: none;
+  border-top: 2px solid #22223b;
+  width: 60px;
+  margin: 8px 0;
+}
+.social-links span {
+  margin-right: 20px;
+  color: #6d6a7a;
+  font-size: 1.05rem;
+}
+.team-right {
+  display: flex;
+  flex-wrap: nowrap;  /* Prevent wrapping to next line */
+  gap: 40px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow-x: auto;   /* Allow horizontal scroll for narrow screens */
+  padding-bottom: 12px;
+}
+
+.profile-card {
+  width: 320px;
+  aspect-ratio: 1 / 1;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 12px rgba(60,60,80,0.09);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 28px;
+  position: relative;
+}
+.profile-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px 6px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.profile-text {
+  position: relative;
+  z-index: 3;
+  margin-top: 72%;
+  padding: 0 12px 0 14px;
+  background: rgba(255,255,255,0.97);
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+}
+.profile-text h4 {
+  margin: 12px 0 4px 0;
+  font-size: 1.2rem;
+  color: #221f33;
+  font-weight: 600;
+}
+.profile-text p {
+  margin: 0 0 2px 0;
+  color: #797183;
+  font-size: 1rem;
+}
+/* Responsive */
+@media (max-width: 900px) {
+  .team-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .team-right {
+    justify-content: flex-start;
+    gap: 30px;
+  }
+  .team-left {
+    padding: 0 12px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .profile-card {
+    width: 90vw;
+    max-width: 340px;
+  }
+  .team-right {
+    gap: 18px;
+  }
+  .team-title {
+    font-size: 2rem;
+  }
+}
+</style>
+
+  <div class="banner">
+    <h1>Marketing Team</h1>
+    <p>Professional Experts Behind Our Success</p>
+  </div>
+
+<!-- Senior Staff Animated Section -->
+<section class="senior-staff-section">
+  <!-- <h2 class="staff-title">Senior Staff</h2> -->
+  <div class="staff-grid">
+    <!-- Row 1 -->
+    <div class="staff-card animate-up">
+      <div class="card-bg-shadow"></div>
+      <img src="https://cdn.shopify.com/s/files/1/0623/2820/9479/files/gempages_579594630555763297-568320cd-28b7-4d21-9cf7-23094a39fa19.png?v=1755069542" alt="Peter L. Stevenson" />
+      <div class="staff-desc">
+        Founder and President<br /><span>Peter L. Stevenson</span>
+      </div>
+    </div>
+    <div class="staff-card animate-up delay-1">
+      <div class="card-bg-shadow"></div>
+      <img src="https://cdn.shopify.com/s/files/1/0623/2820/9479/files/gempages_579594630555763297-568320cd-28b7-4d21-9cf7-23094a39fa19.png?v=1755069542" alt="Mathew Romano" />
+      <div class="staff-desc">
+        Director of Performance Development<br /><span>Mathew Romano</span>
+      </div>
+    </div>
+    <div class="staff-card animate-up delay-2">
+      <div class="card-bg-shadow"></div>
+      <img src="https://cdn.shopify.com/s/files/1/0623/2820/9479/files/gempages_579594630555763297-568320cd-28b7-4d21-9cf7-23094a39fa19.png?v=1755069542" alt="Brandon Wightman" />
+      <div class="staff-desc">
+        Project Manager<br /><span>Brandon Wightman</span>
+      </div>
+    </div>
+    <div class="staff-card animate-up delay-3">
+      <div class="card-bg-shadow"></div>
+      <img src="https://cdn.shopify.com/s/files/1/0623/2820/9479/files/gempages_579594630555763297-568320cd-28b7-4d21-9cf7-23094a39fa19.png?v=1755069542" alt="Anthony Tumminia" />
+      <div class="staff-desc">
+        Project Manager<br /><span>Anthony Tumminia</span>
+      </div>
+    </div>
+    <!-- Row 2 -->
+    <div class="staff-card animate-up delay-4">
+      <div class="card-bg-shadow"></div>
+      <img src="https://cdn.shopify.com/s/files/1/0623/2820/9479/files/gempages_579594630555763297-568320cd-28b7-4d21-9cf7-23094a39fa19.png?v=1755069542" alt="Skyler L. Stevenson" />
+      <div class="staff-desc">
+        Director of Marketing<br /><span>Skyler L. Stevenson</span>
+      </div>
+    </div>
+    <div class="staff-card animate-up delay-5">
+      <div class="card-bg-shadow"></div>
+      <img src="https://cdn.shopify.com/s/files/1/0623/2820/9479/files/gempages_579594630555763297-568320cd-28b7-4d21-9cf7-23094a39fa19.png?v=1755069542" alt="Justin Cogley" />
+      <div class="staff-desc">
+        Project Manager<br /><span>Justin Cogley</span>
+      </div>
+    </div>
+    <div class="staff-card animate-up delay-6">
+      <div class="card-bg-shadow"></div>
+      <img src="https://cdn.shopify.com/s/files/1/0623/2820/9479/files/gempages_579594630555763297-568320cd-28b7-4d21-9cf7-23094a39fa19.png?v=1755069542" alt="Dan Schupp" />
+      <div class="staff-desc">
+        Project Manager<br /><span>Dan Schupp</span>
+      </div>
+    </div>
+    <div class="staff-card animate-up delay-7">
+      <div class="card-bg-shadow"></div>
+      <img src="https://cdn.shopify.com/s/files/1/0623/2820/9479/files/gempages_579594630555763297-568320cd-28b7-4d21-9cf7-23094a39fa19.png?v=1755069542" alt="Adam I. Boskovich" />
+      <div class="staff-desc">
+        Director of Corporate Accounts<br /><span>Adam I. Boskovich</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.senior-staff-section {
+  background: #fff;
+  padding: 54px 0 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.staff-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 34px;
+  letter-spacing: .7px;
+  text-align: left;
+}
+.staff-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px 36px;
+}
+.staff-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+  opacity: 0;
+  transform: translateY(50px) scale(.89);
+  animation: staffFadeUp 0.78s cubic-bezier(.67,.09,.64,.96) forwards;
+  transition: box-shadow .35s, transform .35s;
+}
+.staff-card:hover .card-bg-shadow {
+  box-shadow: 0 16px 44px -16px #8aa2f8, 0 1px 18px -9px #dedffd;
+  opacity: 1;
+}
+.staff-card:hover {
+  transform: scale(1.045) translateY(-2px);
+  z-index: 2;
+}
+.card-bg-shadow {
+  position: absolute;
+  top: 8px; left: 50%; transform: translateX(-50%);
+  width: 92%;
+  height: 88%;
+  background: #f7f7fb;
+  border-radius: 13px;
+  box-shadow: 0 8px 34px -8px #c7cced, 0 1px 18px -10px #e3e5ec;
+  z-index: 0;
+  filter: blur(2px);
+  opacity: 0.85;
+  transition: box-shadow .35s, opacity .33s;
+}
+.staff-card img {
+  width: 100%;
+  max-width: 185px;
+  height: 215px;
+  object-fit: cover;
+  border-radius: 13px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 2px 14px -9px #cfcfe8;
+  margin-bottom: 13px;
+}
+.staff-desc {
+  color: #353535;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.44;
+  font-weight: 500;
+  margin-bottom: 2px;
+  z-index: 2;
+  position: relative;
+  background: transparent;
+}
+.staff-desc span {
+  color: #2624a8;
+  font-weight: bold;
+  font-size: 1.05em;
+}
+/* Animated entry with delay */
+@keyframes staffFadeUp {
+  0% { opacity: 0; transform: translateY(50px) scale(.89);}
+  60% { opacity: .89; transform: translateY(-8px) scale(1.05);}
+  100% { opacity: 1; transform: translateY(0) scale(1);}
+}
+.animate-up { animation-delay: 0.13s; }
+.delay-1 { animation-delay: 0.32s; }
+.delay-2 { animation-delay: 0.45s; }
+.delay-3 { animation-delay: 0.61s; }
+.delay-4 { animation-delay: 0.75s; }
+.delay-5 { animation-delay: 0.89s; }
+.delay-6 { animation-delay: 1.07s; }
+.delay-7 { animation-delay: 1.21s; }
+@media (max-width: 900px) {
+  .staff-grid { grid-template-columns: repeat(2, 1fr); }
+  .staff-card img { max-width: 160px; height: 180px;}
+}
+@media (max-width: 600px) {
+  .staff-grid { grid-template-columns: 1fr; gap: 18px;}
+  .staff-card img { max-width: 95vw; height: 170px;}
+  .staff-title { font-size: 1.25rem;}
+}
+</style>
+
+<div class="banner">
+    <h1>HR & Finance Team</h1>
+    <p>Professional Experts Behind Our Success</p>
+  </div>
+
+
+
+<section class="team-only">
+  <div class="team-right">
+    <div class="profile-card">
+      <img src="https://cdn.shopify.com/s/files/1/0623/2820/9479/files/gempages_579594630555763297-568320cd-28b7-4d21-9cf7-23094a39fa19.png?v=1755069542" alt="Michael Cannon">
+      <div class="profile-text">
+        <h4>Michael Cannon</h4>
+        <p>Art Director</p>
+      </div>
+    </div>
+    <div class="profile-card">
+      <img src="https://cdn.shopify.com/s/files/1/0623/2820/9479/files/gempages_579594630555763297-568320cd-28b7-4d21-9cf7-23094a39fa19.png?v=1755069542" alt="Sylvia Morales">
+      <div class="profile-text">
+        <h4>Sylvia Morales</h4>
+        <p>UI Designer</p>
+      </div>
+    </div>
+    <div class="profile-card">
+      <img src="https://cdn.shopify.com/s/files/1/0623/2820/9479/files/gempages_579594630555763297-568320cd-28b7-4d21-9cf7-23094a39fa19.png?v=1755069542" alt="David Roberts">
+      <div class="profile-text">
+        <h4>David Roberts</h4>
+        <p>UX Specialist</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.team-only {
+  background: #fcfbff;
+  padding: 40px 0;
+  overflow-x: auto;
+}
+.team-right {
+  display: flex;
+  flex-wrap: nowrap; /* keep all cards in a single row */
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 16px;
+}
+.profile-card {
+  width: 220px;
+  flex-shrink: 0;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 12px rgba(60,60,80,0.09);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 28px;
+  /* Removed justify-content and position relative */
+}
+
+.profile-card img {
+  width: 100%;
+  height: auto;        /* Let height adjust according to width */
+  object-fit: cover;
+  border-radius: 6px 6px 0 0;
+  position: static;    /* Remove absolute positioning */
+  margin-bottom: 12px; /* Add some space below image */
+}
+
+.profile-text {
+  position: static;    /* Remove relative positioning */
+  margin-top: 0;       /* Remove large margin */
+  padding: 0 12px 0 14px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;  /* Center text below image */
+}
+
+.profile-text h4 {
+  margin: 12px 0 4px 0;
+  font-size: 1.2rem;
+  color: #221f33;
+  font-weight: 600;
+}
+.profile-text p {
+  margin: 0 0 2px 0;
+  color: #797183;
+  font-size: 1rem;
+}
+@media (max-width: 600px) {
+  .profile-card {
+    width: 90vw;
+    max-width: 340px;
+  }
+  .team-right {
+    gap: 24px;
+    padding: 0 12px;
+  }
+}
+</style>
+
+
+
+
+
+<div class="banner">
+    <h1>Ad-operations</h1>
+    <p>Professional Experts Behind Our Success</p>
+  </div>
+
+<!-- Senior Staff Animated Section -->
+<section class="senior-staff-section">
+  <!-- <h2 class="staff-title">Senior Staff</h2> -->
+  <div class="staff-grid">
+    <!-- Row 1 -->
+    <div class="staff-card animate-up">
+      <div class="card-bg-shadow"></div>
+      <img src="https://cdn.shopify.com/s/files/1/0623/2820/9479/files/gempages_579594630555763297-568320cd-28b7-4d21-9cf7-23094a39fa19.png?v=1755069542" alt="Peter L. Stevenson" />
+      <div class="staff-desc">
+        Founder and President<br /><span>Peter L. Stevenson</span>
+      </div>
+    </div>
+    <div class="staff-card animate-up delay-1">
+      <div class="card-bg-shadow"></div>
+      <img src="https://cdn.shopify.com/s/files/1/0623/2820/9479/files/gempages_579594630555763297-568320cd-28b7-4d21-9cf7-23094a39fa19.png?v=1755069542" alt="Mathew Romano" />
+      <div class="staff-desc">
+        Director of Performance  <br /><span>Mathew Romano</span>
+      </div>
+    </div>
+    <div class="staff-card animate-up delay-2">
+      <div class="card-bg-shadow"></div>
+      <img src="https://cdn.shopify.com/s/files/1/0623/2820/9479/files/gempages_579594630555763297-568320cd-28b7-4d21-9cf7-23094a39fa19.png?v=1755069542" alt="Brandon Wightman" />
+      <div class="staff-desc">
+        Project Manager<br /><span>Brandon Wightman</span>
+      </div>
+    </div>
+    <div class="staff-card animate-up delay-3">
+      <div class="card-bg-shadow"></div>
+      <img src="https://cdn.shopify.com/s/files/1/0623/2820/9479/files/gempages_579594630555763297-568320cd-28b7-4d21-9cf7-23094a39fa19.png?v=1755069542" alt="Anthony Tumminia" />
+      <div class="staff-desc">
+        Project Manager<br /><span>Anthony Tumminia</span>
+      </div>
+    </div>
+    <!-- Row 2 -->
+    <div class="staff-card animate-up delay-4">
+      <div class="card-bg-shadow"></div>
+      <img src="https://cdn.shopify.com/s/files/1/0623/2820/9479/files/gempages_579594630555763297-568320cd-28b7-4d21-9cf7-23094a39fa19.png?v=1755069542" alt="Skyler L. Stevenson" />
+      <div class="staff-desc">
+        Director of Marketing<br /><span>Skyler L. Stevenson</span>
+      </div>
+    </div>
+    <div class="staff-card animate-up delay-5">
+      <div class="card-bg-shadow"></div>
+      <img src="https://cdn.shopify.com/s/files/1/0623/2820/9479/files/gempages_579594630555763297-568320cd-28b7-4d21-9cf7-23094a39fa19.png?v=1755069542" alt="Justin Cogley" />
+      <div class="staff-desc">
+        Project Manager<br /><span>Justin Cogley</span>
+      </div>
+    </div>
+    <div class="staff-card animate-up delay-6">
+      <div class="card-bg-shadow"></div>
+      <img src="https://cdn.shopify.com/s/files/1/0623/2820/9479/files/gempages_579594630555763297-568320cd-28b7-4d21-9cf7-23094a39fa19.png?v=1755069542" alt="Dan Schupp" />
+      <div class="staff-desc">
+        Project Manager<br /><span>Dan Schupp</span>
+      </div>
+    </div>
+    <div class="staff-card animate-up delay-7">
+      <div class="card-bg-shadow"></div>
+      <img src="https://cdn.shopify.com/s/files/1/0623/2820/9479/files/gempages_579594630555763297-568320cd-28b7-4d21-9cf7-23094a39fa19.png?v=1755069542" alt="Adam I. Boskovich" />
+      <div class="staff-desc">
+        Director of Corporate Accounts<br /><span>Adam I. Boskovich</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.senior-staff-section {
+  background: #fff;
+  padding: 54px 0 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.staff-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 34px;
+  letter-spacing: .7px;
+  text-align: left;
+}
+.staff-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px 36px;
+}
+.staff-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+  opacity: 0;
+  transform: translateY(50px) scale(.89);
+  animation: staffFadeUp 0.78s cubic-bezier(.67,.09,.64,.96) forwards;
+  transition: box-shadow .35s, transform .35s;
+}
+.staff-card:hover .card-bg-shadow {
+  box-shadow: 0 16px 44px -16px #8aa2f8, 0 1px 18px -9px #dedffd;
+  opacity: 1;
+}
+.staff-card:hover {
+  transform: scale(1.045) translateY(-2px);
+  z-index: 2;
+}
+.card-bg-shadow {
+  position: absolute;
+  top: 8px; left: 50%; transform: translateX(-50%);
+  width: 92%;
+  height: 88%;
+  background: #f7f7fb;
+  border-radius: 13px;
+  box-shadow: 0 8px 34px -8px #c7cced, 0 1px 18px -10px #e3e5ec;
+  z-index: 0;
+  filter: blur(2px);
+  opacity: 0.85;
+  transition: box-shadow .35s, opacity .33s;
+}
+.staff-card img {
+  width: 100%;
+  max-width: 185px;
+  height: 215px;
+  object-fit: cover;
+  border-radius: 13px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 2px 14px -9px #cfcfe8;
+  margin-bottom: 13px;
+}
+.staff-desc {
+  color: #353535;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.44;
+  font-weight: 500;
+  margin-bottom: 2px;
+  z-index: 2;
+  position: relative;
+  background: transparent;
+}
+.staff-desc span {
+  color: #2624a8;
+  font-weight: bold;
+  font-size: 1.05em;
+}
+/* Animated entry with delay */
+@keyframes staffFadeUp {
+  0% { opacity: 0; transform: translateY(50px) scale(.89);}
+  60% { opacity: .89; transform: translateY(-8px) scale(1.05);}
+  100% { opacity: 1; transform: translateY(0) scale(1);}
+}
+.animate-up { animation-delay: 0.13s; }
+.delay-1 { animation-delay: 0.32s; }
+.delay-2 { animation-delay: 0.45s; }
+.delay-3 { animation-delay: 0.61s; }
+.delay-4 { animation-delay: 0.75s; }
+.delay-5 { animation-delay: 0.89s; }
+.delay-6 { animation-delay: 1.07s; }
+.delay-7 { animation-delay: 1.21s; }
+@media (max-width: 900px) {
+  .staff-grid { grid-template-columns: repeat(2, 1fr); }
+  .staff-card img { max-width: 160px; height: 180px;}
+}
+@media (max-width: 600px) {
+  .staff-grid { grid-template-columns: 1fr; gap: 18px;}
+  .staff-card img { max-width: 95vw; height: 170px;}
+  .staff-title { font-size: 1.25rem;}
+}
+</style>
+</body>
+</html>
